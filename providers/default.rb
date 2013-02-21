@@ -35,7 +35,7 @@ action :save do
   end
 
   if new_resource.bridge
-    package "bridge-utils"
+    package "openvswitch-switch"
   end
 
   execute "if_up" do
